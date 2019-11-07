@@ -1,3 +1,11 @@
+ 
+/**
+Copyright All Rights Reserved by Nirdesh Kumar
+Project : Binary Search Tree
+Authors: Nirdesh Kumar 
+Purpose: Build and use BST for knowledge point of view
+*/
+
 #include<stdio.h>
 #include<stdlib.h>
 
