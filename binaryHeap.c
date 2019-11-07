@@ -1,3 +1,11 @@
+ 
+/**
+Copyright All Rights Reserved by Nirdesh Kumar
+Project : MaxHeap and minHeap
+Authors: Nirdesh Kumar 
+Purpose: use binary head using arrays
+*/
+
 #include<stdio.h>
 #include<stdlib.h>
 #define maxheap 1
