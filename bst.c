@@ -129,20 +129,24 @@ int main(){
 	(t->root)->data=10;
 	(t->root)->rightchild=NULL;
 	(t->root)->leftchild=NULL;
+	
 	t->root=insertIntoBst(t->root,5);
-		t->root=insertIntoBst(t->root,18);
-		t->root=insertIntoBst(t->root,4);
-		t->root=insertIntoBst(t->root,7);
-		t->root=insertIntoBst(t->root,3);
-		t->root=insertIntoBst(t->root,12);
-		t->root=insertIntoBst(t->root,19);t->root=insertIntoBst(t->root,6);t->root=insertIntoBst(t->root,8);
-		inorder(t->root);printf("\n");
-		postOrder(t->root);
-		printf("\n");
-		preOrder(t->root);
-		node* temp1=Find(t->root,7);
-		node* temp2=FindMin(t->root);
-		node* temp3=FindMax((t->root)->leftchild);
-		printf("\n%d\nmin is  -> %d\nmax is-> %d",temp1->data,temp2->data,temp3->data);
-		t->root=DeleteNode(t->root,19);inorder(t->root);
+	t->root=insertIntoBst(t->root,18);
+	t->root=insertIntoBst(t->root,4);
+	t->root=insertIntoBst(t->root,7);
+	t->root=insertIntoBst(t->root,3);
+	t->root=insertIntoBst(t->root,12);
+	t->root=insertIntoBst(t->root,19);
+	t->root=insertIntoBst(t->root,6);
+	t->root=insertIntoBst(t->root,8);
+	
+	inorder(t->root);printf("\n");
+	postOrder(t->root);
+	printf("\n");
+	preOrder(t->root);
+	node* temp1=Find(t->root,7);
+	node* temp2=FindMin(t->root);
+	node* temp3=FindMax((t->root)->leftchild);
+	printf("\n%d\nmin is  -> %d\nmax is-> %d",temp1->data,temp2->data,temp3->data);
+	t->root=DeleteNode(t->root,19);inorder(t->root);
 }
